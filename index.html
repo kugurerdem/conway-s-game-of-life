@@ -1,0 +1,40 @@
+<html>
+	<head>
+		<title> Conway's Game of Life </title>
+
+		<link rel="stylesheet" type="text/css" href="style.css" />
+	
+		<div id="left-content" style="cursor:crosshair" > 
+			<canvas id="canvas" width="720" height="512" style="border:1px solid;"></canvas>
+		</div>
+
+		<div id="right-content"> 
+			<hr/> <center> <b> Game of Life </b> </center> <hr/> <br/>
+			Game of life is a simulation about cells and self organisation. You can add cell by clicking left mouse button and remove cell by clickin right mouse button. If you want to learn more check out wikipedia! </br> </br> <hr/> 
+		 	Population: <text id="population"> 0 </text> <br/> 
+		 	Generation: <text id="generation"> 0 </text> </br>
+			<hr/>
+
+		 	<button onclick="Pause()"> Pause </button> 
+		 	<button onclick="Next_Step()"> Next Step </button>
+		 	<button onclick="Clean()"> Clean </button> <hr/> 
+			
+
+		 	<button onclick="Gosper()"> Gosper Glider </button>
+		 	<button onclick="Glider()"> Glider </button>
+		 	<button onclick="Pulsar()"> Pulsar </button> <br/> 
+		 	<button onclick="Gosper_R()"> Gosper Glider R </button> 
+		 	<button onclick="Pentadecathlon()"> Pentadecathlon </button> <hr/>
+
+
+		 	<br/> <br/> <br/> <br/>
+		 	Made by Ugur Erdem Kucuk
+		</div>
+
+	</head>
+	<body>
+		<script src="events.js"></script>
+		<script src="cells.js"></script>
+		<script src="life.js"></script>
+	</body>
+</html>
