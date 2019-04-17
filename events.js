@@ -39,7 +39,7 @@ canvas.oncontextmenu = function (){
 
 // BUTTON FUNCTIONS
 
-var GamePaused = false;
+var GamePaused = true;
 function Pause(){
 	GamePaused = !GamePaused;
 }
